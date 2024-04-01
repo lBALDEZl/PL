@@ -4,27 +4,54 @@ class Aluno:
         self.rg = rg
         self.data_nascimento = data_nascimento
 
-aluno1 = Aluno("João", "123456789", "2005-03-15")
-aluno2 = Aluno("Teresa", "987654321", "2004-07-20")
-
+aluno1 = Aluno("João", "1.234.567", "2005-03-15")
+aluno2 = Aluno("Teresa", "9.876.543", "2004-07-20")
+print("*********************")
 print("Aluno 1:")
 print("Nome:", aluno1.nome)
 print("RG:", aluno1.rg)
 print("Data de Nascimento:", aluno1.data_nascimento)
-print()
+print("*********************")
 print("Aluno 2:")
 print("Nome:", aluno2.nome)
 print("RG:", aluno2.rg)
 print("Data de Nascimento:", aluno2.data_nascimento)
 
-class Funcionário:
-    def __init__(self, nome, rg, data_nascimento):
+class Funcionario:
+    def __init__(self, nome, cargo, salario):
         self.nome = nome
-        self.rg = rg
-        self.data_nascimento = data_nascimento
+        self.cargo = cargo
+        self.salário = salario
+Funcionario1 = Funcionario("Thiago", "Professor", "R$2,000")
+Funcionario2 = Funcionario("Mário", "Tutor", "R$1.500")
+print("*********************")
+print("Funcionario1:")
+print("Nome:", Funcionario1.nome)
+print("Cargo:", Funcionario1.cargo)
+print("Salário:", Funcionario1.salário)
+print("*********************")
+print("Funcionario2:")
+print("Nome:", Funcionario2.nome)
+print("Cargo:", Funcionario2.cargo)
+print("Salário:", Funcionario2.salário)
 
 class Turmas:
-    def __init__(self, nome, rg, data_nascimento):
-        self.nome = nome
-        self.rg = rg
-        self.data_nascimento = data_nascimento
+    def __init__(self, periodo, serie, sigla, ensino):
+        self.periodo = periodo
+        self.serie = serie
+        self.sigla = sigla
+        self.ensino = ensino
+turma1 = Turmas("Manhã", "5º Serie", "M5MAT","Matemática")
+turma2 = Turmas("Tarde", "2º Serie", "T2PORT","Português")
+print("*********************")
+print("Turma 1:")
+print("Periodo:", turma1.periodo)
+print("Serie:", turma1.serie)
+print("Sigla",turma1.sigla)
+print("Sigla",turma1.ensino)
+print("*********************")
+print("Turma 2:")
+print("Periodo:", turma2.periodo)
+print("Serie:", turma2.serie)
+print("Sigla",turma2.sigla)
+print("Sigla",turma2.ensino)
