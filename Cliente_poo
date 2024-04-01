@@ -1,0 +1,31 @@
+class Cliente:
+    def __init__(self, nome, cod_cliente):
+        self.nome = nome
+        self.cod_cliente= cod_cliente
+
+cliente1 = Cliente("João", "123456789")
+cliente2 = Cliente("Teresa", "987654321")
+
+print("Cliente 1:")
+print("Nome:", cliente1.nome)
+print("Código:", cliente1.cod_cliente)
+
+print("Cliente 2:")
+print("Nome:", cliente2.nome)
+print("Código:", cliente2.cod_cliente)
+
+class Cartão:
+    def __init__(self, numero, data):
+        self.numero = numero
+        self.data= data
+
+cliente1 = Cliente("João", "123456789")
+cliente2 = Cliente("Teresa", "987654321")
+
+print("Cliente 1:")
+print("Nome:", cliente1.nome)
+print("Código:", cliente1.cod_cliente)
+
+print("Cliente 2:")
+print("Nome:", cliente2.nome)
+print("Código:", cliente2.cod_cliente)
