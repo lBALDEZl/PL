@@ -1,4 +1,6 @@
-# Crie um programa que receba o salário de um empregado e o percentual de 
+#1
+
+# Algoritmo 1 - Crie um programa que receba o salário de um empregado e o percentual de 
 # aumento, calcule e mostre o valor do aumento e o novo salário. 
 
 salario = float(input("Digite seu salário total: R$ "))
