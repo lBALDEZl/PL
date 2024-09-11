@@ -1,0 +1,38 @@
+import os
+os.system('cls')
+
+class Estado:
+    def __init__(self,nome,sigla,):
+        self.nome=nome
+        self.sigla=sigla
+        self.cidades=[]
+        self.total=0
+
+    def adiciona_cidade(self, cidade):
+        self.total+=cidade.populacao
+
+    def total_populacao(self):
+        return self.total
+    
+
+class Cidade:
+    def __init__(self,nome, populacao):
+        self.nome=nome
+        self.populacao=populacao
+
+cidade1=Cidade('Osasco', 200000)
+cidade2=Cidade('Tabuão', 200000)
+cidade3=Cidade('Marília', 200000)
+cidade4=Cidade('Maio',200000 )
+
+estado1=Estado('São Paulo', 'SP')
+estado1.adiciona_cidade(cidade1)
+estado1.adiciona_cidade(cidade2)
+estado1.adiciona_cidade(cidade3)
+estado1.adiciona_cidade(cidade4)
+
+print(f"A população do estado de {estado1.nome} ({estado1.sigla}) é de {estado1.total_populacao()}")
+
+
+
+
